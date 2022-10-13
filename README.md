@@ -6,7 +6,7 @@ To log on to the HPC:
  - You must have an HPC account: [https://ucthpc.uct.ac.za/index.php/account/](https://ucthpc.uct.ac.za/index.php/account/)
  - You need to be connected to UCT via VPN: [www.icts.uct.ac.za/AnyConnect](http://www.icts.uct.ac.za/AnyConnect)
 
-In order to build O2 successfully, this repository must be cloned into your `/scratch` folder on the HPC. The various functions are controlled by a Makefile - to execute it, run the `make` command along with the target you want to run within the file and your student number as per the following example: `make overlay stdno="nthnin001"`
+In order to build O2 successfully, this repository must be cloned into your `/scratch` folder on the HPC. The various functions are controlled by a Makefile - to execute it, navigate to the cloned directory (should be `/scratch/[stdno]/o2hpc`)and run the `make` command along with the target you want to run and your student number as per the following example: `make overlay stdno="nthnin001"`
 
 
 ### Installing O2
