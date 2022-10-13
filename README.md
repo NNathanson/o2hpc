@@ -15,7 +15,7 @@ TODO: add info about make targets here
 ### Slurm Admin
 Some of the targets (`init`, `build`, and `pull`) will submit jobs to slurm while running. Slurm (docs: https://slurm.schedmd.com/) is a workflow manager that the HPC uses to regulate what jobs are running at a time - this means that sometimes you will run the makefile and it will take some time before the build begins. In order to keep track of if your job is running, you can check the status of your job:
 
-`squeue -o"%.7i %.9P %.8j %.8u %.2t %.10M %.6D %C" -j [jobnumber]`
+`squeue -j [jobnumber]`
 
 You can also get slurm to email you with notifications when a job starts, fails or completes. If you would like to do this, add the following lines of code to the headers of the files `o2sing_init.sh`, `o2sing_build.sh` and `o2sing_pull.sh`:
 
